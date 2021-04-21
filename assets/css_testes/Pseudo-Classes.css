@@ -1,0 +1,85 @@
+.heading{
+    transition: all 1s ease-in-out;
+}
+p{
+    font-size: 50;
+}
+.heading:hover{
+    color: red;
+}
+
+a{
+    color: salmon ;
+}
+
+a:link{
+    color: firebrick;
+}
+
+a:visited{
+    color: indigo;
+}
+
+a:hover{
+    background: darkorange;
+    color: white;
+    text-decoration: none;
+}
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+.pai .lista li:first-child{
+    background: red;
+}
+
+input:checked + p{
+    background-color: yellow;
+}
+
+input:not(checked) + p{
+    background-color: none;
+}
+
+.teste li:nth-child(even){
+    background-color: fuchsia;
+}
+
+.teste li:nth-child(odd){
+    background-color: lightblue;
+}
+
+.teste li:nth-child(3n){
+    background-color: brown;
+}
+
+.teste li:nth-child(3n+10){
+    background-color: greenyellow;
+}
+
+.teste li::after{
+    content: '- Olá Mundo';
+    background-color: black;
+    color: white;
+}
+
+
+.paragrafo::first-letter{
+    font-size: 115px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.paragrafo::first-line{
+    background: red;
+}
+
+p::selection{
+    background: black;
+    color: white;
+}
+
+

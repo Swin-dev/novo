@@ -1,0 +1,42 @@
+
+/* Adjacent Sibling Selector (+)
+General Sibling Selector (~) 
+(|) requer que a palavra selecionada seja seguida de um traço   
+(^) começa com...
+($) termina com...
+(*) contem algo
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin-left: 20px;
+
+}
+
+.pai > .filha > .filha{
+    color: red;
+
+}
+
+.mae h1+p{
+    color: pink
+}
+
+
+.mae p+h1{
+    color: yellow
+}
+
+.mae-2 h1~p{
+    color: pink
+}
+
+[meu-atributo |="valor-1"]{
+    color: green;
+}
+
+[meu-atributo ^="ami"]{
+    color: blue;
+}
